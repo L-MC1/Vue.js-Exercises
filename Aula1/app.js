@@ -17,16 +17,16 @@
 // Vue.js
 
 Vue.createApp({
-  data: function(){
+  data: function () {
     return {
       objetivos: [],
-      OValor: ''
+      OValor: "",
     };
   },
   methods: {
-    addObjetivo(){
+    addObjetivo() {
       this.objetivos.push(this.OValor);
-      this.OValor = '';
-    }
-  }
+      this.OValor = "";
+    },
+  },
 }).mount("#app");
