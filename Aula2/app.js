@@ -1,7 +1,7 @@
 Vue.createApp({
     data() {
       return {
-        goals: " Meus objetivos "
+        goals: " Aprender a utilizar vue.js "
         };
     }
   }).mount("#user-goal");
