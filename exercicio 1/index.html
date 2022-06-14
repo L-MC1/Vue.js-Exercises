@@ -14,13 +14,18 @@
   </head>
   <body>
     <header>
-      <h1>Vue Course Goals</h1>
+      <h1> Meus dados </h1>
     </header>
     <section id="user-goal">
-      <h2>Meus objetivos</h2>
-      <p>{{ numrand() }}</p>
-      <span v-html="html"></span>
-      <p>Learn more <a v-bind:href="endereco">About Vue</a>.</p>
+      <p>{{ nome }}</p>
+      <p>{{ idade }}</p>
+      <p>{{ newage() }}</p>
+      <img v-bind:src="img  "/>
+      <label class="nome"> Trocar nome </label>
+      <input type="text" class="nome" id="novo" v-model="nome">
+    </br>
+      <label class="nome"> Trocar idade </label>
+      <input type="text" class="nome" id="novo" v-model="idade">
     </section>
   </body>
 </html>
