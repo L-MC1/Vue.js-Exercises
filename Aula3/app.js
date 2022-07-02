@@ -5,6 +5,14 @@ const app = Vue.createApp({
       name: ""
     };
   },
+  computed:{
+    fullname(){
+      if(this.name === ''){
+        return '';
+      }
+      return this.name +' '+ 'Hamilton';
+    }
+  },
   methods: {
     Sname(evento){
       this.name = evento.target.value;
@@ -14,6 +22,9 @@ const app = Vue.createApp({
     },
     reduce(num){
       this.counter = this.counter - num;
+    },
+    resetInput(){
+      this.name = '';
     }
   }
 });
