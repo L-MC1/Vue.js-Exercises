@@ -17,9 +17,9 @@
       <h1>Vue Dynamic Styling</h1>
     </header>
     <section id="styling">
-      <div class="demo" v-bind:style="{borderColor: caixa1 ? 'orange' : 'black' }" v-on:click="caixas('1')"></div>
-      <div class="demo" v-bind:style="{borderColor: caixa2 ? 'orange' : 'black' }" v-on:click="caixas('2')"></div>
-      <div class="demo" v-bind:style="{borderColor: caixa3 ? 'orange' : 'black' }" v-on:click="caixas('3')"></div>
+      <div v-bind:class="caixa1 ? 'demo activated' : 'demo' " v-on:click="caixas('1')"></div>
+      <div v-bind:class="caixa2 ? 'demo activated' : 'demo' " v-on:click="caixas('2')"></div>
+      <div v-bind:class="caixa3 ? 'demo activated' : 'demo' " v-on:click="caixas('3')"></div>
     </section>
   </body>
 </html>

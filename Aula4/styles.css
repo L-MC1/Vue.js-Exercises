@@ -34,3 +34,7 @@ header {
   margin: 16px;
   border: 2px dashed #ccc;
 }
+.activated{
+  border-color: orange;
+  background-color: salmon;
+}
