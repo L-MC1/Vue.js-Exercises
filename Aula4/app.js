@@ -6,6 +6,17 @@ const app = Vue.createApp({
             caixa3: false
         };
     },
+    computed:{
+        caixa1class(){
+            return {activated: this.caixa1};
+        },
+        caixa2class(){
+            return {activated: this.caixa2};
+        },
+        caixa3class(){
+            return {activated: this.caixa3};
+        }
+    },
     methods:{
         caixas(caixa){
             if(caixa === '1'){
