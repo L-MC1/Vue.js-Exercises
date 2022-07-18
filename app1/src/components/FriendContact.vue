@@ -1,6 +1,7 @@
 <template>
+  <!-- O componente -->
   <li>
-    <h2>{{ name }} {{ friendIsFavorite ? '(Favorite)' : ''}}</h2>
+    <h2>{{ name }} {{ isFavorite ? '(Favorite)' : ''}}</h2>
     <button @click="toggleFavorite">Toggle Favorite</button>
     <button @click="toggleDetails">{{ detailsAreVisible ? 'Hide' : 'Show' }} Details</button>
     <ul v-if="detailsAreVisible">
@@ -13,13 +14,19 @@
         {{ emailAddress }}
       </li>
     </ul>
+    <button @click="$emit('delete', id)">Delete</button>
   </li>
 </template>
 
 <script>
 export default {
   // props: ['name', 'phoneNumber', 'emailAddress', 'isFavorite'],
+  /// vars da aplicacao e tipo da variavel
   props: {
+    id: {
+      type: String,
+      required: true
+    },
     name: {
       type: String,
       required: true,
@@ -41,19 +48,32 @@ export default {
       // }
     },
   },
+  /// emits mostra quais funcs e params em uso na aplicacao
+  emits: ['toggle-favorite', 'delete'],
+  // emits: {
+  //   'toggle-favorite': function(id) {
+  //     if (id) {
+  //       return true;
+  //     } else {
+  //       console.warn('Id is missing!');
+  //       return false;
+  //     }
+  //   } 
+  // },
   data() {
     return {
-      detailsAreVisible: false,
-      friendIsFavorite: this.isFavorite,
+      /// dados do componente
+      detailsAreVisible: false
     };
   },
   methods: {
+    /// funcs da aplicacao
     toggleDetails() {
       this.detailsAreVisible = !this.detailsAreVisible;
     },
     toggleFavorite() {
-      this.friendIsFavorite = !this.friendIsFavorite;
-    },
+      this.$emit('toggle-favorite', this.id);
+    }
   },
 };
 </script>
