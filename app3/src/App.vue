@@ -38,6 +38,8 @@ export default {
 };
 </script>
 
+<!-- estilo global -->
+
 <style>
 html {
   font-family: sans-serif;

@@ -4,6 +4,9 @@
   </header>
 </template>
 
+<!-- estilos com o name scoped aplicam o estilo apenas para o componete no qual estão sendo
+definidos, sem o scoped o estilo fica global e é aplicado em qualquer parte da aplicação -->
+
 <style scoped>
   header {
     width: 100%;

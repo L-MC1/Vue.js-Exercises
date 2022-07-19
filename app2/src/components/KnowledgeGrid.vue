@@ -12,6 +12,6 @@
 
 <script>
 export default {
-  inject: ['topics'],
+  in: ['topics'],
 };
 </script>
