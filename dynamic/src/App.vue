@@ -6,7 +6,10 @@
     <button @click="setSelectedComponent('manage-goals')">Manage Goals</button>
     <!-- <active-goals v-if="selectedComponent === 'active-goals'"></active-goals>
     <manage-goals v-if="selectedComponent === 'manage-goals'"></manage-goals>-->
+    
+    <!-- keep-alive mantem o dado salvo em cache -->
     <keep-alive>
+      <!-- :is substitui os 2 ifs acima -->
       <component :is="selectedComponent"></component>
     </keep-alive>
   </div>
