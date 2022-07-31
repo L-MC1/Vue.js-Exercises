@@ -8,6 +8,7 @@
       :info-text="activeUser.description"
       :role="activeUser.role"
     ></user-info>
+    <novo></novo>
   </div>
 </template>
 
@@ -15,12 +16,14 @@
 import TheHeader from './components/TheHeader.vue';
 import BadgeList from './components/BadgeList.vue';
 import UserInfo from './components/UserInfo.vue';
+import novo from './components/novo.vue';
 
 export default {
   components: {
     TheHeader,
     BadgeList,
-    UserInfo
+    UserInfo,
+    novo
   },
   data() {
     return {

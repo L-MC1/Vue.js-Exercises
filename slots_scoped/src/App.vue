@@ -8,6 +8,10 @@
       :info-text="activeUser.description"
       :role="activeUser.role"
     ></user-info>
+    <novo #default="slotProps">
+      <h2>{{slotProps.item}}</h2>
+      <p>{{slotProps['outraProp']}}</p>
+    </novo>
   </div>
 </template>
 
@@ -15,12 +19,14 @@
 import TheHeader from './components/TheHeader.vue';
 import BadgeList from './components/BadgeList.vue';
 import UserInfo from './components/UserInfo.vue';
+import Novo from './components/Novo.vue';
 
 export default {
   components: {
     TheHeader,
     BadgeList,
-    UserInfo
+    UserInfo,
+    Novo
   },
   data() {
     return {
