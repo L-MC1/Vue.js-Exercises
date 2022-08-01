@@ -1,2 +1,2 @@
 # Estudos-Vue.js
-Estudos sobre o Framework Vue.js
+App que CRUD de notas com link
