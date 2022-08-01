@@ -1,2 +1,4 @@
 # Estudos-Vue.js
-App que CRUD de notas com link
+App exemplo que passa dados para componente
+
+https://app-vue-dados-user.herokuapp.com

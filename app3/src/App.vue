@@ -29,7 +29,7 @@ export default {
   data() {
     return {
       activeUser: {
-        name: 'Maximilian Schwarzmüller',
+        name: 'Nome da pessoa',
         description: 'Site owner and admin',
         role: 'admin',
       },
