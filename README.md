@@ -1,2 +1,2 @@
 # Estudos-Vue.js
-Estudos sobre o Framework Vue.js
+App exemplo que passa dados para componente
