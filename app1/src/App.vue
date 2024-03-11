@@ -2,9 +2,8 @@
 <!-- Inicio da aplicacao -->
   <section>
     <header>
-      <h1>My Friends</h1>
+      <h1>Egeo Process</h1>
     </header>
-    <new-friend @add-contact="addContact"></new-friend>
     <ul>
       <!-- Componente contato -->
       <friend-contact
